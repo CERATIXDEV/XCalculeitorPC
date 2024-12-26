@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k506wTe5dl0=",
+  "dgSpecHash": "r/XwSl3XT8k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\crist\\OneDrive\\Desktop\\C-SHARP\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+  "projectFilePath": "C:\\Users\\crist\\OneDrive\\Desktop\\C-SHARP\\Xcalculeitor\\WinFormsApp1\\WinFormsApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\crist\\.nuget\\packages\\materialskin.net5\\1.0.2\\materialskin.net5.1.0.2.nupkg.sha512",
     "C:\\Users\\crist\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.101\\microsoft.net.sdk.compilers.toolset.9.0.101.nupkg.sha512",
