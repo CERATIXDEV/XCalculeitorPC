@@ -14,9 +14,9 @@ namespace WinFormsApp1
     public  class CustomButton: Button
     {
         //
-        private int BorderSize = 0;
-        public int BorderRadius = 40;
-        private Color BorderColor = Color.GreenYellow;
+        public int BorderSize = 0;
+        public int BorderRadius =30;
+        public Color BorderColor = Color.White;
 
 
         public CustomButton() 

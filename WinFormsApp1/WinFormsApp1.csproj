@@ -8,6 +8,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <StartupObject></StartupObject>
     <ApplicationIcon>bin\Debug\net8.0-windows\ICONO_CALCULADORA.ico</ApplicationIcon>
+    <AssemblyVersion>1.0</AssemblyVersion>
+    <FileVersion>1.0</FileVersion>
+    <Copyright>CeratixDev</Copyright>
   </PropertyGroup>
 
   <ItemGroup>

@@ -30,25 +30,6 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
-            button13 = new Button();
-            button14 = new Button();
-            button15 = new Button();
-            button16 = new Button();
-            button17 = new Button();
-            button18 = new Button();
-            button19 = new Button();
             label1 = new Label();
             label2 = new Label();
             menuStrip1 = new MenuStrip();
@@ -57,319 +38,44 @@
             toolStripMenuItem1 = new ToolStripSeparator();
             salirToolStripMenuItem = new ToolStripMenuItem();
             ayudaToolStripMenuItem = new ToolStripMenuItem();
-            toolTip1 = new ToolTip(components);
-            button23 = new Button();
-            button22 = new Button();
-            button25 = new Button();
-            button26 = new Button();
-            button27 = new Button();
             acercaDeToolStripMenuItem = new ToolStripMenuItem();
+            toolTip1 = new ToolTip(components);
+            customButton1 = new CustomButton();
+            customButton2 = new CustomButton();
+            customButton3 = new CustomButton();
+            customButton4 = new CustomButton();
+            customButton5 = new CustomButton();
+            customButton6 = new CustomButton();
+            customButton7 = new CustomButton();
+            customButton8 = new CustomButton();
+            customButton9 = new CustomButton();
+            customButton10 = new CustomButton();
+            customButton11 = new CustomButton();
+            customButton12 = new CustomButton();
+            customButton13 = new CustomButton();
+            customButton14 = new CustomButton();
+            customButton15 = new CustomButton();
+            customButton16 = new CustomButton();
+            customButton17 = new CustomButton();
+            customButton18 = new CustomButton();
+            customButton19 = new CustomButton();
+            customButton20 = new CustomButton();
+            customButton21 = new CustomButton();
+            customButton22 = new CustomButton();
+            customButton23 = new CustomButton();
+            customButton24 = new CustomButton();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // button1
-            // 
-            button1.BackColor = Color.Black;
-            button1.FlatAppearance.BorderColor = Color.LightGray;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Arial Black", 24F, FontStyle.Bold);
-            button1.ForeColor = Color.Silver;
-            button1.Location = new Point(0, 401);
-            button1.Name = "button1";
-            button1.Size = new Size(73, 73);
-            button1.TabIndex = 14;
-            button1.Text = "1";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.Black;
-            button2.FlatAppearance.BorderColor = Color.LightGray;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Arial Black", 24F, FontStyle.Bold);
-            button2.ForeColor = Color.Silver;
-            button2.Location = new Point(74, 401);
-            button2.Name = "button2";
-            button2.Size = new Size(73, 73);
-            button2.TabIndex = 15;
-            button2.Text = "2";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.Black;
-            button3.FlatAppearance.BorderColor = Color.LightGray;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Arial Black", 24F, FontStyle.Bold);
-            button3.ForeColor = Color.Silver;
-            button3.Location = new Point(148, 475);
-            button3.Name = "button3";
-            button3.Size = new Size(73, 73);
-            button3.TabIndex = 19;
-            button3.Text = "0";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.Black;
-            button4.FlatAppearance.BorderColor = Color.LightGray;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Arial Black", 24F, FontStyle.Bold);
-            button4.ForeColor = Color.Silver;
-            button4.Location = new Point(148, 327);
-            button4.Name = "button4";
-            button4.Size = new Size(73, 73);
-            button4.TabIndex = 12;
-            button4.Text = "6";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.Black;
-            button5.FlatAppearance.BorderColor = Color.LightGray;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Arial Black", 24F, FontStyle.Bold);
-            button5.ForeColor = Color.Silver;
-            button5.Location = new Point(74, 327);
-            button5.Name = "button5";
-            button5.Size = new Size(73, 73);
-            button5.TabIndex = 11;
-            button5.Text = "5";
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click;
-            // 
-            // button6
-            // 
-            button6.BackColor = Color.Black;
-            button6.FlatAppearance.BorderColor = Color.LightGray;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Arial Black", 24F, FontStyle.Bold);
-            button6.ForeColor = Color.Silver;
-            button6.Location = new Point(148, 401);
-            button6.Name = "button6";
-            button6.Size = new Size(73, 73);
-            button6.TabIndex = 16;
-            button6.Text = "3";
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click;
-            // 
-            // button7
-            // 
-            button7.BackColor = Color.Black;
-            button7.FlatAppearance.BorderColor = Color.LightGray;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.Font = new Font("Arial Black", 24F, FontStyle.Bold);
-            button7.ForeColor = Color.Silver;
-            button7.Location = new Point(0, 327);
-            button7.Name = "button7";
-            button7.Size = new Size(73, 73);
-            button7.TabIndex = 10;
-            button7.Text = "4";
-            button7.UseVisualStyleBackColor = false;
-            button7.Click += button7_Click;
-            // 
-            // button8
-            // 
-            button8.BackColor = Color.Black;
-            button8.FlatAppearance.BorderColor = Color.LightGray;
-            button8.FlatStyle = FlatStyle.Flat;
-            button8.Font = new Font("Arial Black", 24F, FontStyle.Bold);
-            button8.ForeColor = Color.Silver;
-            button8.Location = new Point(74, 253);
-            button8.Name = "button8";
-            button8.Size = new Size(73, 73);
-            button8.TabIndex = 7;
-            button8.Text = "8";
-            button8.UseVisualStyleBackColor = false;
-            button8.Click += button8_Click;
-            // 
-            // button9
-            // 
-            button9.BackColor = Color.Black;
-            button9.FlatAppearance.BorderColor = Color.LightGray;
-            button9.FlatStyle = FlatStyle.Flat;
-            button9.Font = new Font("Arial Black", 24F, FontStyle.Bold);
-            button9.ForeColor = Color.Silver;
-            button9.Location = new Point(0, 253);
-            button9.Name = "button9";
-            button9.Size = new Size(73, 73);
-            button9.TabIndex = 6;
-            button9.Text = "7";
-            button9.UseVisualStyleBackColor = false;
-            button9.Click += button9_Click;
-            button9.KeyDown += button9_KeyDown;
-            button9.KeyPress += button9_KeyPress;
-            // 
-            // button10
-            // 
-            button10.BackColor = Color.Black;
-            button10.FlatAppearance.BorderColor = Color.LightGray;
-            button10.FlatStyle = FlatStyle.Flat;
-            button10.Font = new Font("Arial Black", 24F, FontStyle.Bold);
-            button10.ForeColor = Color.Silver;
-            button10.Location = new Point(148, 253);
-            button10.Name = "button10";
-            button10.Size = new Size(73, 73);
-            button10.TabIndex = 8;
-            button10.Text = "9";
-            button10.UseVisualStyleBackColor = false;
-            button10.Click += button10_Click;
-            // 
-            // button11
-            // 
-            button11.BackColor = Color.RoyalBlue;
-            button11.FlatAppearance.BorderColor = Color.Silver;
-            button11.FlatStyle = FlatStyle.Flat;
-            button11.Font = new Font("Arial Black", 20F, FontStyle.Bold);
-            button11.ForeColor = Color.White;
-            button11.Location = new Point(148, 179);
-            button11.Name = "button11";
-            button11.Size = new Size(73, 73);
-            button11.TabIndex = 4;
-            button11.Text = "xʸ";
-            toolTip1.SetToolTip(button11, "Potencia");
-            button11.UseVisualStyleBackColor = false;
-            button11.Click += button11_Click;
-            // 
-            // button12
-            // 
-            button12.BackColor = Color.RoyalBlue;
-            button12.FlatAppearance.BorderColor = Color.Silver;
-            button12.FlatStyle = FlatStyle.Flat;
-            button12.Font = new Font("Arial Black", 20F, FontStyle.Bold);
-            button12.ForeColor = Color.White;
-            button12.Location = new Point(222, 179);
-            button12.Name = "button12";
-            button12.Size = new Size(73, 73);
-            button12.TabIndex = 3;
-            button12.Text = "CE";
-            toolTip1.SetToolTip(button12, "Borrar Caracter");
-            button12.UseVisualStyleBackColor = false;
-            button12.Click += button12_Click;
-            // 
-            // button13
-            // 
-            button13.BackColor = Color.RoyalBlue;
-            button13.FlatAppearance.BorderColor = Color.Silver;
-            button13.FlatStyle = FlatStyle.Flat;
-            button13.Font = new Font("Arial Black", 20F, FontStyle.Bold);
-            button13.ForeColor = Color.White;
-            button13.Location = new Point(0, 179);
-            button13.Name = "button13";
-            button13.Size = new Size(73, 73);
-            button13.TabIndex = 2;
-            button13.Text = "C";
-            toolTip1.SetToolTip(button13, "Borrar Todo");
-            button13.UseVisualStyleBackColor = false;
-            button13.Click += button13_Click;
-            // 
-            // button14
-            // 
-            button14.BackColor = Color.RoyalBlue;
-            button14.FlatAppearance.BorderColor = Color.Silver;
-            button14.FlatStyle = FlatStyle.Flat;
-            button14.Font = new Font("Arial Black", 24F, FontStyle.Bold);
-            button14.ForeColor = Color.White;
-            button14.Location = new Point(222, 253);
-            button14.Name = "button14";
-            button14.Size = new Size(73, 73);
-            button14.TabIndex = 5;
-            button14.Text = "+";
-            toolTip1.SetToolTip(button14, "Sumar");
-            button14.UseVisualStyleBackColor = false;
-            button14.Click += button14_Click;
-            // 
-            // button15
-            // 
-            button15.BackColor = Color.RoyalBlue;
-            button15.FlatAppearance.BorderColor = Color.Silver;
-            button15.FlatStyle = FlatStyle.Flat;
-            button15.Font = new Font("Arial Black", 24F, FontStyle.Bold);
-            button15.ForeColor = Color.White;
-            button15.Location = new Point(222, 327);
-            button15.Name = "button15";
-            button15.Size = new Size(73, 73);
-            button15.TabIndex = 9;
-            button15.Text = "-";
-            toolTip1.SetToolTip(button15, "Restar");
-            button15.UseVisualStyleBackColor = false;
-            button15.Click += button15_Click;
-            // 
-            // button16
-            // 
-            button16.BackColor = Color.RoyalBlue;
-            button16.FlatAppearance.BorderColor = Color.Silver;
-            button16.FlatStyle = FlatStyle.Flat;
-            button16.Font = new Font("Arial Black", 24F, FontStyle.Bold);
-            button16.ForeColor = Color.White;
-            button16.Location = new Point(222, 401);
-            button16.Name = "button16";
-            button16.Size = new Size(73, 73);
-            button16.TabIndex = 13;
-            button16.Text = "/";
-            toolTip1.SetToolTip(button16, "Dividir");
-            button16.UseVisualStyleBackColor = false;
-            button16.Click += button16_Click;
-            // 
-            // button17
-            // 
-            button17.BackColor = Color.RoyalBlue;
-            button17.FlatAppearance.BorderColor = Color.Silver;
-            button17.FlatStyle = FlatStyle.Flat;
-            button17.Font = new Font("Arial Black", 24F, FontStyle.Bold);
-            button17.ForeColor = Color.White;
-            button17.Location = new Point(222, 475);
-            button17.Name = "button17";
-            button17.Size = new Size(73, 73);
-            button17.TabIndex = 17;
-            button17.Text = "*";
-            toolTip1.SetToolTip(button17, "Multiplicar");
-            button17.UseVisualStyleBackColor = false;
-            button17.Click += button17_Click;
-            // 
-            // button18
-            // 
-            button18.BackColor = Color.RoyalBlue;
-            button18.FlatAppearance.BorderColor = Color.Silver;
-            button18.FlatStyle = FlatStyle.Flat;
-            button18.Font = new Font("Arial Black", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button18.ForeColor = Color.White;
-            button18.Location = new Point(0, 475);
-            button18.Name = "button18";
-            button18.Size = new Size(73, 73);
-            button18.TabIndex = 20;
-            button18.Text = "=";
-            toolTip1.SetToolTip(button18, "Resultado");
-            button18.UseVisualStyleBackColor = false;
-            button18.Click += button18_Click;
-            // 
-            // button19
-            // 
-            button19.BackColor = Color.Black;
-            button19.FlatAppearance.BorderColor = Color.LightGray;
-            button19.FlatStyle = FlatStyle.Flat;
-            button19.Font = new Font("Arial Black", 24F, FontStyle.Bold);
-            button19.ForeColor = Color.Silver;
-            button19.Location = new Point(74, 475);
-            button19.Name = "button19";
-            button19.Size = new Size(73, 73);
-            button19.TabIndex = 18;
-            button19.Text = ",";
-            button19.UseVisualStyleBackColor = false;
-            button19.Click += button19_Click;
-            // 
             // label1
             // 
+            label1.BackColor = Color.White;
             label1.BorderStyle = BorderStyle.Fixed3D;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(224, 224, 224);
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(0, 28);
             label1.Name = "label1";
-            label1.Size = new Size(295, 27);
+            label1.Size = new Size(297, 27);
             label1.TabIndex = 0;
             label1.TextAlign = ContentAlignment.MiddleRight;
             // 
@@ -378,9 +84,9 @@
             label2.BackColor = Color.White;
             label2.BorderStyle = BorderStyle.FixedSingle;
             label2.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(0, 55);
+            label2.Location = new Point(-1, 55);
             label2.Name = "label2";
-            label2.Size = new Size(295, 90);
+            label2.Size = new Size(307, 90);
             label2.TabIndex = 21;
             label2.Text = "0";
             label2.TextAlign = ContentAlignment.MiddleRight;
@@ -391,7 +97,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem, ayudaToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(293, 28);
+            menuStrip1.Size = new Size(297, 28);
             menuStrip1.TabIndex = 22;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -428,120 +134,404 @@
             ayudaToolStripMenuItem.Size = new Size(66, 24);
             ayudaToolStripMenuItem.Text = "&Ayuda";
             // 
-            // button23
-            // 
-            button23.BackColor = Color.RoyalBlue;
-            button23.FlatAppearance.BorderColor = Color.Silver;
-            button23.FlatStyle = FlatStyle.Flat;
-            button23.Font = new Font("Arial Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button23.ForeColor = Color.White;
-            button23.Location = new Point(74, 179);
-            button23.Name = "button23";
-            button23.Size = new Size(73, 73);
-            button23.TabIndex = 23;
-            button23.Text = "√";
-            toolTip1.SetToolTip(button23, "Raiz Cuadrada");
-            button23.UseVisualStyleBackColor = false;
-            button23.Click += button23_Click;
-            // 
-            // button22
-            // 
-            button22.BackColor = Color.LimeGreen;
-            button22.FlatAppearance.BorderColor = Color.Silver;
-            button22.FlatStyle = FlatStyle.Flat;
-            button22.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold);
-            button22.ForeColor = Color.Black;
-            button22.Location = new Point(222, 141);
-            button22.Name = "button22";
-            button22.Size = new Size(73, 37);
-            button22.TabIndex = 24;
-            button22.Text = "Raiz³";
-            button22.UseVisualStyleBackColor = false;
-            button22.Click += button22_Click;
-            // 
-            // button25
-            // 
-            button25.BackColor = Color.LimeGreen;
-            button25.FlatAppearance.BorderColor = Color.Silver;
-            button25.FlatStyle = FlatStyle.Flat;
-            button25.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold);
-            button25.ForeColor = Color.Black;
-            button25.Location = new Point(148, 141);
-            button25.Name = "button25";
-            button25.Size = new Size(73, 37);
-            button25.TabIndex = 29;
-            button25.Text = "Tan";
-            button25.UseVisualStyleBackColor = false;
-            button25.Click += button25_Click;
-            // 
-            // button26
-            // 
-            button26.BackColor = Color.LimeGreen;
-            button26.FlatAppearance.BorderColor = Color.Silver;
-            button26.FlatStyle = FlatStyle.Flat;
-            button26.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold);
-            button26.ForeColor = Color.Black;
-            button26.Location = new Point(74, 141);
-            button26.Name = "button26";
-            button26.Size = new Size(73, 37);
-            button26.TabIndex = 28;
-            button26.Text = "Cos";
-            button26.UseVisualStyleBackColor = false;
-            button26.Click += button26_Click;
-            // 
-            // button27
-            // 
-            button27.BackColor = Color.LimeGreen;
-            button27.FlatAppearance.BorderColor = Color.Silver;
-            button27.FlatStyle = FlatStyle.Flat;
-            button27.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold);
-            button27.ForeColor = Color.Black;
-            button27.Location = new Point(0, 141);
-            button27.Name = "button27";
-            button27.Size = new Size(73, 37);
-            button27.TabIndex = 27;
-            button27.Text = "Sen";
-            button27.UseVisualStyleBackColor = false;
-            button27.Click += button27_Click;
-            // 
             // acercaDeToolStripMenuItem
             // 
             acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            acercaDeToolStripMenuItem.Size = new Size(180, 24);
+            acercaDeToolStripMenuItem.Size = new Size(158, 24);
             acercaDeToolStripMenuItem.Text = "Acerca de...";
             acercaDeToolStripMenuItem.Click += acercaDeToolStripMenuItem_Click;
+            // 
+            // customButton1
+            // 
+            customButton1.BackColor = Color.Khaki;
+            customButton1.FlatAppearance.BorderSize = 0;
+            customButton1.FlatStyle = FlatStyle.Flat;
+            customButton1.Font = new Font("Arial", 14.25F);
+            customButton1.ForeColor = Color.Black;
+            customButton1.Location = new Point(0, 145);
+            customButton1.Name = "customButton1";
+            customButton1.Size = new Size(73, 37);
+            customButton1.TabIndex = 30;
+            customButton1.Text = "Sen";
+            customButton1.UseVisualStyleBackColor = false;
+            customButton1.Click += customButton1_Click;
+            // 
+            // customButton2
+            // 
+            customButton2.BackColor = Color.Khaki;
+            customButton2.FlatAppearance.BorderSize = 0;
+            customButton2.FlatStyle = FlatStyle.Flat;
+            customButton2.Font = new Font("Arial", 14.25F);
+            customButton2.ForeColor = Color.Black;
+            customButton2.Location = new Point(74, 145);
+            customButton2.Name = "customButton2";
+            customButton2.Size = new Size(73, 37);
+            customButton2.TabIndex = 31;
+            customButton2.Text = "Cos";
+            customButton2.UseVisualStyleBackColor = false;
+            customButton2.Click += customButton2_Click;
+            // 
+            // customButton3
+            // 
+            customButton3.BackColor = Color.Khaki;
+            customButton3.FlatAppearance.BorderSize = 0;
+            customButton3.FlatStyle = FlatStyle.Flat;
+            customButton3.Font = new Font("Arial", 14.25F);
+            customButton3.ForeColor = Color.Black;
+            customButton3.Location = new Point(148, 145);
+            customButton3.Name = "customButton3";
+            customButton3.Size = new Size(73, 37);
+            customButton3.TabIndex = 32;
+            customButton3.Text = "Tan";
+            customButton3.UseVisualStyleBackColor = false;
+            customButton3.Click += customButton3_Click;
+            // 
+            // customButton4
+            // 
+            customButton4.BackColor = Color.Khaki;
+            customButton4.FlatAppearance.BorderSize = 0;
+            customButton4.FlatStyle = FlatStyle.Flat;
+            customButton4.Font = new Font("Arial", 14.25F);
+            customButton4.ForeColor = Color.Black;
+            customButton4.Location = new Point(222, 145);
+            customButton4.Name = "customButton4";
+            customButton4.Size = new Size(73, 37);
+            customButton4.TabIndex = 33;
+            customButton4.Text = "√³";
+            customButton4.UseVisualStyleBackColor = false;
+            customButton4.Click += customButton4_Click;
+            // 
+            // customButton5
+            // 
+            customButton5.BackColor = SystemColors.ActiveCaption;
+            customButton5.FlatAppearance.BorderSize = 0;
+            customButton5.FlatStyle = FlatStyle.Flat;
+            customButton5.Font = new Font("Arial Black", 20F, FontStyle.Bold);
+            customButton5.ForeColor = Color.Black;
+            customButton5.Location = new Point(0, 183);
+            customButton5.Name = "customButton5";
+            customButton5.Size = new Size(73, 73);
+            customButton5.TabIndex = 34;
+            customButton5.Text = "C";
+            customButton5.UseVisualStyleBackColor = false;
+            customButton5.Click += customButton5_Click;
+            // 
+            // customButton6
+            // 
+            customButton6.BackColor = SystemColors.ActiveCaption;
+            customButton6.FlatAppearance.BorderSize = 0;
+            customButton6.FlatStyle = FlatStyle.Flat;
+            customButton6.Font = new Font("Arial Black", 20F, FontStyle.Bold);
+            customButton6.ForeColor = Color.Black;
+            customButton6.Location = new Point(74, 183);
+            customButton6.Name = "customButton6";
+            customButton6.Size = new Size(73, 73);
+            customButton6.TabIndex = 35;
+            customButton6.Text = "√²";
+            customButton6.UseVisualStyleBackColor = false;
+            customButton6.Click += customButton6_Click;
+            // 
+            // customButton7
+            // 
+            customButton7.BackColor = SystemColors.ActiveCaption;
+            customButton7.FlatAppearance.BorderSize = 0;
+            customButton7.FlatStyle = FlatStyle.Flat;
+            customButton7.Font = new Font("Arial Black", 20F, FontStyle.Bold);
+            customButton7.ForeColor = Color.Black;
+            customButton7.Location = new Point(148, 183);
+            customButton7.Name = "customButton7";
+            customButton7.Size = new Size(73, 73);
+            customButton7.TabIndex = 36;
+            customButton7.Text = "xʸ";
+            customButton7.UseVisualStyleBackColor = false;
+            customButton7.Click += customButton7_Click;
+            // 
+            // customButton8
+            // 
+            customButton8.BackColor = SystemColors.ActiveCaption;
+            customButton8.FlatAppearance.BorderSize = 0;
+            customButton8.FlatStyle = FlatStyle.Flat;
+            customButton8.Font = new Font("Arial Black", 20F, FontStyle.Bold);
+            customButton8.ForeColor = Color.Black;
+            customButton8.Location = new Point(222, 183);
+            customButton8.Name = "customButton8";
+            customButton8.Size = new Size(73, 73);
+            customButton8.TabIndex = 37;
+            customButton8.Text = "CE";
+            customButton8.UseVisualStyleBackColor = false;
+            customButton8.Click += customButton8_Click;
+            // 
+            // customButton9
+            // 
+            customButton9.BackColor = Color.LightGray;
+            customButton9.FlatAppearance.BorderSize = 0;
+            customButton9.FlatStyle = FlatStyle.Flat;
+            customButton9.Font = new Font("Arial Black", 24F, FontStyle.Bold);
+            customButton9.ForeColor = Color.Black;
+            customButton9.Location = new Point(0, 257);
+            customButton9.Name = "customButton9";
+            customButton9.Size = new Size(73, 73);
+            customButton9.TabIndex = 38;
+            customButton9.Text = "7";
+            customButton9.UseVisualStyleBackColor = false;
+            customButton9.Click += customButton9_Click;
+            // 
+            // customButton10
+            // 
+            customButton10.BackColor = Color.LightGray;
+            customButton10.FlatAppearance.BorderSize = 0;
+            customButton10.FlatStyle = FlatStyle.Flat;
+            customButton10.Font = new Font("Arial Black", 24F, FontStyle.Bold);
+            customButton10.ForeColor = Color.Black;
+            customButton10.Location = new Point(74, 257);
+            customButton10.Name = "customButton10";
+            customButton10.Size = new Size(73, 73);
+            customButton10.TabIndex = 39;
+            customButton10.Text = "8";
+            customButton10.UseVisualStyleBackColor = false;
+            customButton10.Click += customButton10_Click;
+            // 
+            // customButton11
+            // 
+            customButton11.BackColor = Color.LightGray;
+            customButton11.FlatAppearance.BorderSize = 0;
+            customButton11.FlatStyle = FlatStyle.Flat;
+            customButton11.Font = new Font("Arial Black", 24F, FontStyle.Bold);
+            customButton11.ForeColor = Color.Black;
+            customButton11.Location = new Point(148, 257);
+            customButton11.Name = "customButton11";
+            customButton11.Size = new Size(73, 73);
+            customButton11.TabIndex = 40;
+            customButton11.Text = "9";
+            customButton11.UseVisualStyleBackColor = false;
+            customButton11.Click += customButton11_Click;
+            // 
+            // customButton12
+            // 
+            customButton12.BackColor = SystemColors.ActiveCaption;
+            customButton12.FlatAppearance.BorderSize = 0;
+            customButton12.FlatStyle = FlatStyle.Flat;
+            customButton12.Font = new Font("Arial Black", 20F, FontStyle.Bold);
+            customButton12.ForeColor = Color.Black;
+            customButton12.Location = new Point(222, 257);
+            customButton12.Name = "customButton12";
+            customButton12.Size = new Size(73, 73);
+            customButton12.TabIndex = 41;
+            customButton12.Text = "+";
+            customButton12.UseVisualStyleBackColor = false;
+            customButton12.Click += customButton12_Click;
+            // 
+            // customButton13
+            // 
+            customButton13.BackColor = Color.LightGray;
+            customButton13.FlatAppearance.BorderSize = 0;
+            customButton13.FlatStyle = FlatStyle.Flat;
+            customButton13.Font = new Font("Arial Black", 24F, FontStyle.Bold);
+            customButton13.ForeColor = Color.Black;
+            customButton13.Location = new Point(0, 331);
+            customButton13.Name = "customButton13";
+            customButton13.Size = new Size(73, 73);
+            customButton13.TabIndex = 42;
+            customButton13.Text = "4";
+            customButton13.UseVisualStyleBackColor = false;
+            customButton13.Click += customButton13_Click;
+            // 
+            // customButton14
+            // 
+            customButton14.BackColor = Color.LightGray;
+            customButton14.FlatAppearance.BorderSize = 0;
+            customButton14.FlatStyle = FlatStyle.Flat;
+            customButton14.Font = new Font("Arial Black", 24F, FontStyle.Bold);
+            customButton14.ForeColor = Color.Black;
+            customButton14.Location = new Point(74, 331);
+            customButton14.Name = "customButton14";
+            customButton14.Size = new Size(73, 73);
+            customButton14.TabIndex = 43;
+            customButton14.Text = "5";
+            customButton14.UseVisualStyleBackColor = false;
+            customButton14.Click += customButton14_Click;
+            // 
+            // customButton15
+            // 
+            customButton15.BackColor = Color.LightGray;
+            customButton15.FlatAppearance.BorderSize = 0;
+            customButton15.FlatStyle = FlatStyle.Flat;
+            customButton15.Font = new Font("Arial Black", 24F, FontStyle.Bold);
+            customButton15.ForeColor = Color.Black;
+            customButton15.Location = new Point(148, 331);
+            customButton15.Name = "customButton15";
+            customButton15.Size = new Size(73, 73);
+            customButton15.TabIndex = 44;
+            customButton15.Text = "6";
+            customButton15.UseVisualStyleBackColor = false;
+            customButton15.Click += customButton15_Click;
+            // 
+            // customButton16
+            // 
+            customButton16.BackColor = SystemColors.ActiveCaption;
+            customButton16.FlatAppearance.BorderSize = 0;
+            customButton16.FlatStyle = FlatStyle.Flat;
+            customButton16.Font = new Font("Arial Black", 20F, FontStyle.Bold);
+            customButton16.ForeColor = Color.Black;
+            customButton16.Location = new Point(222, 331);
+            customButton16.Name = "customButton16";
+            customButton16.Size = new Size(73, 73);
+            customButton16.TabIndex = 45;
+            customButton16.Text = "-";
+            customButton16.UseVisualStyleBackColor = false;
+            customButton16.Click += customButton16_Click;
+            // 
+            // customButton17
+            // 
+            customButton17.BackColor = Color.LightGray;
+            customButton17.FlatAppearance.BorderSize = 0;
+            customButton17.FlatStyle = FlatStyle.Flat;
+            customButton17.Font = new Font("Arial Black", 24F, FontStyle.Bold);
+            customButton17.ForeColor = Color.Black;
+            customButton17.Location = new Point(0, 405);
+            customButton17.Name = "customButton17";
+            customButton17.Size = new Size(73, 73);
+            customButton17.TabIndex = 46;
+            customButton17.Text = "1";
+            customButton17.UseVisualStyleBackColor = false;
+            customButton17.Click += customButton17_Click;
+            // 
+            // customButton18
+            // 
+            customButton18.BackColor = Color.LightGray;
+            customButton18.FlatAppearance.BorderSize = 0;
+            customButton18.FlatStyle = FlatStyle.Flat;
+            customButton18.Font = new Font("Arial Black", 24F, FontStyle.Bold);
+            customButton18.ForeColor = Color.Black;
+            customButton18.Location = new Point(74, 405);
+            customButton18.Name = "customButton18";
+            customButton18.Size = new Size(73, 73);
+            customButton18.TabIndex = 47;
+            customButton18.Text = "2";
+            customButton18.UseVisualStyleBackColor = false;
+            customButton18.Click += customButton18_Click;
+            // 
+            // customButton19
+            // 
+            customButton19.BackColor = Color.LightGray;
+            customButton19.FlatAppearance.BorderSize = 0;
+            customButton19.FlatStyle = FlatStyle.Flat;
+            customButton19.Font = new Font("Arial Black", 24F, FontStyle.Bold);
+            customButton19.ForeColor = Color.Black;
+            customButton19.Location = new Point(148, 405);
+            customButton19.Name = "customButton19";
+            customButton19.Size = new Size(73, 73);
+            customButton19.TabIndex = 48;
+            customButton19.Text = "3";
+            customButton19.UseVisualStyleBackColor = false;
+            customButton19.Click += customButton19_Click;
+            // 
+            // customButton20
+            // 
+            customButton20.BackColor = SystemColors.ActiveCaption;
+            customButton20.FlatAppearance.BorderSize = 0;
+            customButton20.FlatStyle = FlatStyle.Flat;
+            customButton20.Font = new Font("Arial Black", 20F, FontStyle.Bold);
+            customButton20.ForeColor = Color.Black;
+            customButton20.Location = new Point(222, 405);
+            customButton20.Name = "customButton20";
+            customButton20.Size = new Size(73, 73);
+            customButton20.TabIndex = 49;
+            customButton20.Text = "/";
+            customButton20.UseVisualStyleBackColor = false;
+            customButton20.Click += customButton20_Click;
+            // 
+            // customButton21
+            // 
+            customButton21.BackColor = SystemColors.ActiveCaption;
+            customButton21.FlatAppearance.BorderSize = 0;
+            customButton21.FlatStyle = FlatStyle.Flat;
+            customButton21.Font = new Font("Arial Black", 20F, FontStyle.Bold);
+            customButton21.ForeColor = Color.Black;
+            customButton21.Location = new Point(0, 479);
+            customButton21.Name = "customButton21";
+            customButton21.Size = new Size(73, 73);
+            customButton21.TabIndex = 50;
+            customButton21.Text = "=";
+            customButton21.UseVisualStyleBackColor = false;
+            customButton21.Click += customButton21_Click;
+            // 
+            // customButton22
+            // 
+            customButton22.BackColor = Color.LightGray;
+            customButton22.FlatAppearance.BorderSize = 0;
+            customButton22.FlatStyle = FlatStyle.Flat;
+            customButton22.Font = new Font("Arial Black", 24F, FontStyle.Bold);
+            customButton22.ForeColor = Color.Black;
+            customButton22.Location = new Point(74, 479);
+            customButton22.Name = "customButton22";
+            customButton22.Size = new Size(73, 73);
+            customButton22.TabIndex = 51;
+            customButton22.Text = "0";
+            customButton22.UseVisualStyleBackColor = false;
+            customButton22.Click += customButton22_Click;
+            // 
+            // customButton23
+            // 
+            customButton23.BackColor = Color.LightGray;
+            customButton23.FlatAppearance.BorderSize = 0;
+            customButton23.FlatStyle = FlatStyle.Flat;
+            customButton23.Font = new Font("Arial Black", 24F, FontStyle.Bold);
+            customButton23.ForeColor = Color.Black;
+            customButton23.Location = new Point(148, 479);
+            customButton23.Name = "customButton23";
+            customButton23.Size = new Size(73, 73);
+            customButton23.TabIndex = 52;
+            customButton23.Text = ",";
+            customButton23.UseVisualStyleBackColor = false;
+            customButton23.Click += customButton23_Click;
+            // 
+            // customButton24
+            // 
+            customButton24.BackColor = SystemColors.ActiveCaption;
+            customButton24.FlatAppearance.BorderSize = 0;
+            customButton24.FlatStyle = FlatStyle.Flat;
+            customButton24.Font = new Font("Arial Black", 20F, FontStyle.Bold);
+            customButton24.ForeColor = Color.Black;
+            customButton24.Location = new Point(222, 479);
+            customButton24.Name = "customButton24";
+            customButton24.Size = new Size(73, 73);
+            customButton24.TabIndex = 53;
+            customButton24.Text = "*";
+            customButton24.UseVisualStyleBackColor = false;
+            customButton24.Click += customButton24_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlText;
-            ClientSize = new Size(293, 548);
-            Controls.Add(button25);
-            Controls.Add(button26);
-            Controls.Add(button27);
-            Controls.Add(button22);
-            Controls.Add(button23);
+            ClientSize = new Size(297, 558);
+            Controls.Add(customButton24);
+            Controls.Add(customButton23);
+            Controls.Add(customButton22);
+            Controls.Add(customButton21);
+            Controls.Add(customButton20);
+            Controls.Add(customButton19);
+            Controls.Add(customButton18);
+            Controls.Add(customButton17);
+            Controls.Add(customButton16);
+            Controls.Add(customButton15);
+            Controls.Add(customButton14);
+            Controls.Add(customButton13);
+            Controls.Add(customButton12);
+            Controls.Add(customButton11);
+            Controls.Add(customButton10);
+            Controls.Add(customButton9);
+            Controls.Add(customButton8);
+            Controls.Add(customButton7);
+            Controls.Add(customButton6);
+            Controls.Add(customButton5);
+            Controls.Add(customButton4);
+            Controls.Add(customButton3);
+            Controls.Add(customButton2);
+            Controls.Add(customButton1);
             Controls.Add(label1);
-            Controls.Add(button19);
-            Controls.Add(button18);
-            Controls.Add(button17);
-            Controls.Add(button16);
-            Controls.Add(button15);
-            Controls.Add(button14);
-            Controls.Add(button11);
-            Controls.Add(button12);
-            Controls.Add(button13);
-            Controls.Add(button10);
-            Controls.Add(button7);
-            Controls.Add(button8);
-            Controls.Add(button9);
-            Controls.Add(button4);
-            Controls.Add(button5);
-            Controls.Add(button6);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
             Controls.Add(menuStrip1);
             Controls.Add(label2);
             ForeColor = Color.Black;
@@ -555,7 +545,6 @@
             Text = "XCalculeitor";
             Activated += Form1_Activated;
             Load += Form1_Load;
-            KeyDown += Form1_KeyDown;
             KeyPress += Form1_KeyPress;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
@@ -565,25 +554,6 @@
 
         #endregion
         private TextBox textBox2;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button button11;
-        private Button button12;
-        private Button button13;
-        private Button button14;
-        private Button button15;
-        private Button button16;
-        private Button button17;
-        private Button button18;
-        private Button button19;
         private Label label1;
         private Label label2;
         private MenuStrip menuStrip1;
@@ -593,11 +563,30 @@
         private ToolStripMenuItem salirToolStripMenuItem;
         private ToolStripMenuItem ayudaToolStripMenuItem;
         private ToolTip toolTip1;
-        private Button button23;
-        private Button button22;
-        private Button button25;
-        private Button button26;
-        private Button button27;
         private ToolStripMenuItem acercaDeToolStripMenuItem;
+        private CustomButton customButton1;
+        private CustomButton customButton2;
+        private CustomButton customButton3;
+        private CustomButton customButton4;
+        private CustomButton customButton5;
+        private CustomButton customButton6;
+        private CustomButton customButton7;
+        private CustomButton customButton8;
+        private CustomButton customButton9;
+        private CustomButton customButton10;
+        private CustomButton customButton11;
+        private CustomButton customButton12;
+        private CustomButton customButton13;
+        private CustomButton customButton14;
+        private CustomButton customButton15;
+        private CustomButton customButton16;
+        private CustomButton customButton17;
+        private CustomButton customButton18;
+        private CustomButton customButton19;
+        private CustomButton customButton20;
+        private CustomButton customButton21;
+        private CustomButton customButton22;
+        private CustomButton customButton23;
+        private CustomButton customButton24;
     }
 }

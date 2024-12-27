@@ -19,14 +19,19 @@ namespace WinFormsApp1
         public Form1()
         {
             InitializeComponent();
+
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+           
+            
 
-            this.Text += " " + Application.ProductVersion;
+            this.Text += " 1.0.0 "; // + Application.ProductVersion;
 
-            button18.Focus();
+            customButton21.Focus(); //Boton Igual
+
             nfi = new CultureInfo("es-CO", false).NumberFormat;
             nfi.NumberDecimalSeparator = ",";
 
@@ -42,10 +47,12 @@ namespace WinFormsApp1
             }
             else
             {
-
-                if (File.Exists(Settings.Default.ImagenFondo))
+                string ruta = Settings.Default.ImagenFondo;
+                if (File.Exists(ruta) == true)
                 {
-                    this.BackgroundImage = Image.FromFile(Settings.Default.ImagenFondo); // CARGA IMAGEN DE FONDO PARA LA APP
+                    this.BackgroundImage = Image.FromFile(ruta); // CARGA IMAGEN DE FONDO PARA LA APP
+                    this.BackgroundImageLayout = ImageLayout.Stretch;
+                    
                 }
                 else
                 {
@@ -60,92 +67,110 @@ namespace WinFormsApp1
             System.Drawing.Color Cboton = Settings.Default.ColorBotonFunciones;
             System.Drawing.Color CTboton = Settings.Default.ColorTextoBotonFun;
 
-            button11.BackColor = Cboton;
-            button12.BackColor = Cboton;
-            button13.BackColor = Cboton;
-            button23.BackColor = Cboton;
-            button14.BackColor = Cboton;
-            button15.BackColor = Cboton;
-            button16.BackColor = Cboton;
-            button17.BackColor = Cboton;
-            button18.BackColor = Cboton;
+            customButton5.BackColor = Cboton;
+            customButton6.BackColor = Cboton;
+            customButton7.BackColor = Cboton;
+            customButton8.BackColor = Cboton;
+            customButton12.BackColor = Cboton;
+            customButton16.BackColor = Cboton;
+            customButton20.BackColor = Cboton;
+            customButton24.BackColor = Cboton;
+            customButton21.BackColor = Cboton;
 
-            button11.ForeColor = CTboton;
-            button12.ForeColor = CTboton;
-            button13.ForeColor = CTboton;
-            button14.ForeColor = CTboton;
-            button15.ForeColor = CTboton;
-            button16.ForeColor = CTboton;
-            button17.ForeColor = CTboton;
-            button18.ForeColor = CTboton;
-            button23.ForeColor = CTboton;
+            customButton5.ForeColor = CTboton;
+            customButton6.ForeColor = CTboton;
+            customButton7.ForeColor = CTboton;
+            customButton8.ForeColor = CTboton;
+            customButton12.ForeColor = CTboton;
+            customButton16.ForeColor = CTboton;
+            customButton20.ForeColor = CTboton;
+            customButton24.ForeColor = CTboton;
+            customButton21.ForeColor = CTboton;
+
+            customButton5.BorderRadius = Settings.Default.borderRadio;
+            customButton6.BorderRadius = Settings.Default.borderRadio;
+            customButton7.BorderRadius = Settings.Default.borderRadio;
+            customButton8.BorderRadius = Settings.Default.borderRadio;
+            customButton12.BorderRadius = Settings.Default.borderRadio;
+            customButton16.BorderRadius = Settings.Default.borderRadio;
+            customButton20.BorderRadius = Settings.Default.borderRadio;
+            customButton24.BorderRadius = Settings.Default.borderRadio;
+            customButton21.BorderRadius = Settings.Default.borderRadio;
+
             ///////////////////////////////////
-            ///
-
 
             //BOTONES NUMEROS
             System.Drawing.Color CbotonN = Settings.Default.ColorBotonNumeros;
             System.Drawing.Color CTbotonN = Settings.Default.ColorTextoBotonNum;
 
-            button1.BackColor = CbotonN;
-            button2.BackColor = CbotonN;
-            button3.BackColor = CbotonN;
-            button4.BackColor = CbotonN;
-            button5.BackColor = CbotonN;
-            button6.BackColor = CbotonN;
-            button7.BackColor = CbotonN;
-            button8.BackColor = CbotonN;
-            button9.BackColor = CbotonN;
-            button10.BackColor = CbotonN;
-            button19.BackColor = CbotonN;
+            customButton9.BackColor = CbotonN;
+            customButton10.BackColor = CbotonN;
+            customButton11.BackColor = CbotonN;
+            customButton13.BackColor = CbotonN;
+            customButton14.BackColor = CbotonN;
+            customButton15.BackColor = CbotonN;
+            customButton17.BackColor = CbotonN;
+            customButton18.BackColor = CbotonN;
+            customButton19.BackColor = CbotonN;
+            customButton22.BackColor = CbotonN;
+            customButton23.BackColor = CbotonN;
 
-            button1.ForeColor = CTbotonN;
-            button2.ForeColor = CTbotonN;
-            button3.ForeColor = CTbotonN;
-            button4.ForeColor = CTbotonN;
-            button5.ForeColor = CTbotonN;
-            button6.ForeColor = CTbotonN;
-            button7.ForeColor = CTbotonN;
-            button8.ForeColor = CTbotonN;
-            button9.ForeColor = CTbotonN;
-            button10.ForeColor = CTbotonN;
-            button19.ForeColor = CTbotonN;
+            customButton9.ForeColor = CTbotonN;
+            customButton10.ForeColor = CTbotonN;
+            customButton11.ForeColor = CTbotonN;
+            customButton13.ForeColor = CTbotonN;
+            customButton14.ForeColor = CTbotonN;
+            customButton15.ForeColor = CTbotonN;
+            customButton17.ForeColor = CTbotonN;
+            customButton18.ForeColor = CTbotonN;
+            customButton19.ForeColor = CTbotonN;
+            customButton22.ForeColor = CTbotonN;
+            customButton23.ForeColor = CTbotonN;
 
-            button1.Font = estiloTexto;
-            button2.Font = estiloTexto;
-            button3.Font = estiloTexto;
-            button4.Font = estiloTexto;
-            button5.Font = estiloTexto;
-            button6.Font = estiloTexto;
-            button7.Font = estiloTexto;
-            button8.Font = estiloTexto;
-            button9.Font = estiloTexto;
-            button10.Font = estiloTexto;
-            button19.Font = estiloTexto;
+            customButton9.Font = estiloTexto;
+            customButton10.Font = estiloTexto;
+            customButton11.Font = estiloTexto;
+            customButton13.Font = estiloTexto;
+            customButton14.Font = estiloTexto;
+            customButton15.Font = estiloTexto;
+            customButton17.Font = estiloTexto;
+            customButton18.Font = estiloTexto;
+            customButton19.Font = estiloTexto;
+            customButton22.Font = estiloTexto;
+            customButton23.Font = estiloTexto;
+
+            customButton9.BorderRadius = Settings.Default.borderRadio;
+            customButton10.BorderRadius = Settings.Default.borderRadio;
+            customButton11.BorderRadius = Settings.Default.borderRadio;
+            customButton13.BorderRadius = Settings.Default.borderRadio;
+            customButton14.BorderRadius = Settings.Default.borderRadio;
+            customButton15.BorderRadius = Settings.Default.borderRadio;
+            customButton17.BorderRadius = Settings.Default.borderRadio;
+            customButton18.BorderRadius = Settings.Default.borderRadio;
+            customButton19.BorderRadius = Settings.Default.borderRadio;
+            customButton22.BorderRadius = Settings.Default.borderRadio;
+            customButton23.BorderRadius = Settings.Default.borderRadio;
 
             //////////////////////////////// 
-            ///
 
             //BOTONES ESPECIALES
             System.Drawing.Color CbotonE = Settings.Default.ColorBotonEspecial;
             System.Drawing.Color CTbotonE = Settings.Default.ColorTextoBotonEsp;
 
-            button22.BackColor = CbotonE;
-            button25.BackColor = CbotonE;
-            button26.BackColor = CbotonE;
-            button27.BackColor = CbotonE;
+            customButton1.BackColor = CbotonE;
+            customButton2.BackColor = CbotonE;
+            customButton3.BackColor = CbotonE;
+            customButton4.BackColor = CbotonE;
 
-            button22.ForeColor = CTbotonE;
-            button25.ForeColor = CTbotonE;
-            button26.ForeColor = CTbotonE;
-            button27.ForeColor = CTbotonE;
+            customButton1.ForeColor = CTbotonE;
+            customButton2.ForeColor = CTbotonE;
+            customButton3.ForeColor = CTbotonE;
+            customButton4.ForeColor = CTbotonE;
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            label2.Text = Digito(label2.Text, button1.Text);
+            customButton1.BorderRadius = Settings.Default.borderRadio;
+            customButton2.BorderRadius = Settings.Default.borderRadio;
+            customButton3.BorderRadius = Settings.Default.borderRadio;
+            customButton4.BorderRadius = Settings.Default.borderRadio;
 
         }
 
@@ -242,7 +267,7 @@ namespace WinFormsApp1
                 canDecimales = longCadena - (posicion + 1);
             }
 
-            button18.Focus();
+            customButton21.Focus();
 
             double numero = Convert.ToDouble(numReal);
             string decimales = "N" + canDecimales.ToString();
@@ -258,135 +283,6 @@ namespace WinFormsApp1
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            label2.Text = Digito(numReal, button2.Text);
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            label2.Text = Digito(numReal, button6.Text);
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            label2.Text = Digito(numReal, button7.Text);
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            label2.Text = Digito(numReal, button5.Text);
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            label2.Text = Digito(numReal, button4.Text);
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            label2.Text = Digito(numReal, button9.Text);
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            label2.Text = Digito(numReal, button8.Text);
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            label2.Text = Digito(numReal, button10.Text);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            label2.Text = Digito(numReal, button3.Text);
-        }
-
-        private void button19_Click(object sender, EventArgs e)
-        {
-
-            if (!label2.Text.Contains(","))
-            {
-                label2.Text = Digito(numReal, button19.Text);
-            }
-
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-            //BOTON BORRAR TODO
-            label2.Text = "0";
-            label1.Text = "";
-            Numero1 = "";
-            Operador = "";
-            numReal = "0";
-            xRes = false;
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            //BOTONTO BORRAR DIGITOS
-            string cadena = numReal;
-            int largoCad = cadena.Length;
-            string newCadena = "";
-            if (largoCad > 0)
-            {
-                largoCad--;
-                for (int i = 0; i < largoCad; i++)
-                {
-                    newCadena += cadena[i];
-                }
-
-                numReal = newCadena;
-
-                if (numReal.Length == 0)
-                {
-                    numReal = "0";
-                    label2.Text = numReal;
-                }
-                else
-                {
-
-
-                    int canDecimales = 0;
-
-                    if (numReal.Contains(","))
-                    {
-                        int longCadena = numReal.Length;
-                        int posicion = numReal.IndexOf(',');
-                        canDecimales = longCadena - (posicion + 1);
-
-                        if (canDecimales > 0)
-                        {
-                            double numero = Convert.ToDouble(numReal);
-                            label2.Text = numero.ToString("N" + canDecimales, nfi);
-
-                        }
-                        else
-                        {
-                            label2.Text = numReal;
-                        }
-
-                    }
-                    else
-                    {
-                        double numero = Convert.ToDouble(numReal);
-                        label2.Text = numero.ToString("N" + canDecimales, nfi);
-                    }
-
-
-                }
-
-            }
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-            //BOTON SUMAR
-            Operacion(button14.Text);
-
-        }
 
         public string Resultado(double Num1, double Num2, string ope)
         {
@@ -434,23 +330,6 @@ namespace WinFormsApp1
 
         }
 
-        private void button15_Click(object sender, EventArgs e)
-        {
-            //BOTON RESTAR
-            Operacion(button15.Text);
-        }
-
-        private void button16_Click(object sender, EventArgs e)
-        {
-            //BOTON DIVIDIR
-            Operacion(button16.Text);
-        }
-
-        private void button17_Click(object sender, EventArgs e)
-        {
-            //BOTON MULTIPLICAR
-            Operacion(button17.Text);
-        }
 
         ////////////////////////////////////
         private void Operacion(string Boton)
@@ -576,10 +455,423 @@ namespace WinFormsApp1
                 }
             }
 
-            button18.Focus();
+            customButton21.Focus();
         }
 
-        private void button18_Click(object sender, EventArgs e)
+    
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //BOTON SALIR
+            Application.Exit();
+        }
+
+        private void configuracionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 frmConfiguracion = new Form4();
+            frmConfiguracion.ShowDialog();
+        }
+
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+
+            int codigo = (int)e.KeyChar;
+
+            switch (codigo)
+            {
+                case 46:
+                    //COMA
+                    customButton23_Click(sender, e);
+                    break;
+
+                case 48:
+                    //NUMERO CERO
+                    customButton22_Click(sender, e);
+                    break;
+
+                case 49:
+                    //NUMERO 1
+                    customButton17_Click(sender, e);
+                    break;
+
+                case 50:
+                    //NUMERO 2
+                    customButton18_Click(sender, e);
+                    break;
+
+                case 51:
+                    //NUMERO 3
+                    customButton19_Click(sender, e);
+                    break;
+
+                case 52:
+                    //NUMERO 4
+                    customButton13_Click(sender, e);
+                    break;
+
+                case 53:
+                    //NUMERO 5
+                    customButton14_Click(sender, e);
+                    break;
+
+                case 54:
+                    //NUMERO 6
+                    customButton15_Click(sender, e);
+                    break;
+
+                case 55:
+                    //NUMERO 7
+                    customButton9_Click(sender, e);
+                    break;
+
+                case 56:
+                    //NUMERO 8
+                    customButton10_Click(sender, e);
+                    break;
+
+                case 57:
+                    //NUMERO 9
+                    customButton11_Click(sender, e);
+                    break;
+
+                case 47:
+                    //BOTON DIVISION
+                    customButton20_Click(sender, e);
+                    break;
+
+                case 45:
+                    //BOTON RESTA
+                    customButton16_Click(sender, e);
+                    break;
+
+                case 43:
+                    //BOTON SUMA
+                    customButton12_Click(sender, e);
+                    break;
+
+                case 42:
+                    //BOTON MULTIPLICACION
+                    customButton24_Click(sender, e);
+                    break;
+
+                case 8:
+                    //BOTON BORRAR DIGITO
+                    customButton8_Click(sender, e);
+                    break;
+
+                case 13:
+                    //BOTON IGUAL
+                    customButton21_Click(sender, e);
+                    break;
+
+            }
+        }
+
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            //ESTILO TEXTO DE LOS NUMEROS
+            estiloTexto = Settings.Default.TipoLetraTam;
+
+            // FONDO DE LA APP
+            int OpFondo = Settings.Default.OpcionFondo;
+            if (OpFondo == 1)
+            {
+                this.BackColor = Settings.Default.ColorFondoApp; //COLOR DE FONDO DE LA APP
+
+            }
+            else
+            {
+
+                if (File.Exists(Settings.Default.ImagenFondo))
+                {
+                    this.BackgroundImage = Image.FromFile(Settings.Default.ImagenFondo); // CARGA IMAGEN DE FONDO PARA LA APP
+                    this.BackgroundImageLayout = ImageLayout.Stretch;
+                    customButton5.BackColor = Color.Transparent;
+                }
+                else
+                {
+                    //SI EL ARCHIVO DE IMAGEN NO EXISTE CARGA EL COLOR DE FONDO POR DEFECTO
+                    this.BackColor = Settings.Default.ColorFondoApp; //COLOR DE FONDO DE LA APP
+                }
+
+            }
+            /////////////////////////
+
+            //BOTONES DE FUNCIONES
+            System.Drawing.Color Cboton = Settings.Default.ColorBotonFunciones;
+            System.Drawing.Color CTboton = Settings.Default.ColorTextoBotonFun;
+
+            customButton5.BackColor = Cboton;
+            customButton6.BackColor = Cboton;
+            customButton7.BackColor = Cboton;
+            customButton8.BackColor = Cboton;
+            customButton12.BackColor = Cboton;
+            customButton16.BackColor = Cboton;
+            customButton20.BackColor = Cboton;
+            customButton24.BackColor = Cboton;
+            customButton21.BackColor = Cboton;
+
+            customButton5.ForeColor = CTboton;
+            customButton6.ForeColor = CTboton;
+            customButton7.ForeColor = CTboton;
+            customButton8.ForeColor = CTboton;
+            customButton12.ForeColor = CTboton;
+            customButton16.ForeColor = CTboton;
+            customButton20.ForeColor = CTboton;
+            customButton24.ForeColor = CTboton;
+            customButton21.ForeColor = CTboton;
+
+            customButton5.BorderRadius = Settings.Default.borderRadio;
+            customButton6.BorderRadius = Settings.Default.borderRadio;
+            customButton7.BorderRadius = Settings.Default.borderRadio;
+            customButton8.BorderRadius = Settings.Default.borderRadio;
+            customButton12.BorderRadius = Settings.Default.borderRadio;
+            customButton16.BorderRadius = Settings.Default.borderRadio;
+            customButton20.BorderRadius = Settings.Default.borderRadio;
+            customButton24.BorderRadius = Settings.Default.borderRadio;
+            customButton21.BorderRadius = Settings.Default.borderRadio;
+
+            ///////////////////////////////////
+
+            //BOTONES NUMEROS
+            System.Drawing.Color CbotonN = Settings.Default.ColorBotonNumeros;
+            System.Drawing.Color CTbotonN = Settings.Default.ColorTextoBotonNum;
+
+            customButton9.BackColor = CbotonN;
+            customButton10.BackColor = CbotonN;
+            customButton11.BackColor = CbotonN;
+            customButton13.BackColor = CbotonN;
+            customButton14.BackColor = CbotonN;
+            customButton15.BackColor = CbotonN;
+            customButton17.BackColor = CbotonN;
+            customButton18.BackColor = CbotonN;
+            customButton19.BackColor = CbotonN;
+            customButton22.BackColor = CbotonN;
+            customButton23.BackColor = CbotonN;
+
+            customButton9.ForeColor = CTbotonN;
+            customButton10.ForeColor = CTbotonN;
+            customButton11.ForeColor = CTbotonN;
+            customButton13.ForeColor = CTbotonN;
+            customButton14.ForeColor = CTbotonN;
+            customButton15.ForeColor = CTbotonN;
+            customButton17.ForeColor = CTbotonN;
+            customButton18.ForeColor = CTbotonN;
+            customButton19.ForeColor = CTbotonN;
+            customButton22.ForeColor = CTbotonN;
+            customButton23.ForeColor = CTbotonN;
+
+            customButton9.Font = estiloTexto;
+            customButton10.Font = estiloTexto;
+            customButton11.Font = estiloTexto;
+            customButton13.Font = estiloTexto;
+            customButton14.Font = estiloTexto;
+            customButton15.Font = estiloTexto;
+            customButton17.Font = estiloTexto;
+            customButton18.Font = estiloTexto;
+            customButton19.Font = estiloTexto;
+            customButton22.Font = estiloTexto;
+            customButton23.Font = estiloTexto;
+
+            customButton9.BorderRadius = Settings.Default.borderRadio;
+            customButton10.BorderRadius = Settings.Default.borderRadio;
+            customButton11.BorderRadius = Settings.Default.borderRadio;
+            customButton13.BorderRadius = Settings.Default.borderRadio;
+            customButton14.BorderRadius = Settings.Default.borderRadio;
+            customButton15.BorderRadius = Settings.Default.borderRadio;
+            customButton17.BorderRadius = Settings.Default.borderRadio;
+            customButton18.BorderRadius = Settings.Default.borderRadio;
+            customButton19.BorderRadius = Settings.Default.borderRadio;
+            customButton22.BorderRadius = Settings.Default.borderRadio;
+            customButton23.BorderRadius = Settings.Default.borderRadio;
+
+            //////////////////////////////// 
+
+            //BOTONES ESPECIALES
+            System.Drawing.Color CbotonE = Settings.Default.ColorBotonEspecial;
+            System.Drawing.Color CTbotonE = Settings.Default.ColorTextoBotonEsp;
+
+            customButton1.BackColor = CbotonE;
+            customButton2.BackColor = CbotonE;
+            customButton3.BackColor = CbotonE;
+            customButton4.BackColor = CbotonE;
+
+            customButton1.ForeColor = CTbotonE;
+            customButton2.ForeColor = CTbotonE;
+            customButton3.ForeColor = CTbotonE;
+            customButton4.ForeColor = CTbotonE;
+
+            customButton1.BorderRadius = Settings.Default.borderRadio;
+            customButton2.BorderRadius = Settings.Default.borderRadio;
+            customButton3.BorderRadius = Settings.Default.borderRadio;
+            customButton4.BorderRadius = Settings.Default.borderRadio;
+
+            this.Refresh();
+
+        }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 frmAcerca = new Form3();
+            frmAcerca.ShowDialog();
+        }
+
+        private void customButton9_Click(object sender, EventArgs e)
+        {
+            label2.Text = Digito(numReal, customButton9.Text);
+        }
+
+        private void customButton10_Click(object sender, EventArgs e)
+        {
+            label2.Text = Digito(numReal, customButton10.Text);
+        }
+
+        private void customButton11_Click(object sender, EventArgs e)
+        {
+            label2.Text = Digito(numReal, customButton11.Text);
+        }
+
+        private void customButton13_Click(object sender, EventArgs e)
+        {
+            label2.Text = Digito(numReal, customButton13.Text);
+        }
+
+        private void customButton14_Click(object sender, EventArgs e)
+        {
+            label2.Text = Digito(numReal, customButton14.Text);
+        }
+
+        private void customButton15_Click(object sender, EventArgs e)
+        {
+            label2.Text = Digito(numReal, customButton15.Text);
+        }
+
+        private void customButton17_Click(object sender, EventArgs e)
+        {
+            label2.Text = Digito(numReal, customButton17.Text);
+        }
+
+        private void customButton18_Click(object sender, EventArgs e)
+        {
+            label2.Text = Digito(numReal, customButton18.Text);
+        }
+
+        private void customButton19_Click(object sender, EventArgs e)
+        {
+            label2.Text = Digito(numReal, customButton19.Text);
+        }
+
+        private void customButton22_Click(object sender, EventArgs e)
+        {
+            label2.Text = Digito(numReal, customButton22.Text);
+        }
+
+        private void customButton23_Click(object sender, EventArgs e)
+        {
+            if (!label2.Text.Contains(","))
+            {
+                label2.Text = Digito(numReal, customButton23.Text);
+            }
+
+
+        }
+
+        private void customButton5_Click(object sender, EventArgs e)
+        {
+            //BOTON BORRAR TODO
+            label2.Text = "0";
+            label1.Text = "";
+            Numero1 = "";
+            Operador = "";
+            numReal = "0";
+            xRes = false;
+        }
+
+        private void customButton8_Click(object sender, EventArgs e)
+        {
+            //BOTONTO BORRAR DIGITOS
+            string cadena = numReal;
+            int largoCad = cadena.Length;
+            string newCadena = "";
+            if (largoCad > 0)
+            {
+                largoCad--;
+                for (int i = 0; i < largoCad; i++)
+                {
+                    newCadena += cadena[i];
+                }
+
+                numReal = newCadena;
+
+                if (numReal.Length == 0)
+                {
+                    numReal = "0";
+                    label2.Text = numReal;
+                }
+                else
+                {
+
+
+                    int canDecimales = 0;
+
+                    if (numReal.Contains(","))
+                    {
+                        int longCadena = numReal.Length;
+                        int posicion = numReal.IndexOf(',');
+                        canDecimales = longCadena - (posicion + 1);
+
+                        if (canDecimales > 0)
+                        {
+                            double numero = Convert.ToDouble(numReal);
+                            label2.Text = numero.ToString("N" + canDecimales, nfi);
+
+                        }
+                        else
+                        {
+                            label2.Text = numReal;
+                        }
+
+                    }
+                    else
+                    {
+                        double numero = Convert.ToDouble(numReal);
+                        label2.Text = numero.ToString("N" + canDecimales, nfi);
+                    }
+
+
+                }
+
+            }
+        }
+
+        private void customButton12_Click(object sender, EventArgs e)
+        {
+            //SUMA
+            Operacion(customButton12.Text);
+        }
+
+        private void customButton16_Click(object sender, EventArgs e)
+        {
+            //RESTA
+            Operacion(customButton16.Text);
+        }
+
+        private void customButton20_Click(object sender, EventArgs e)
+        {
+            //DIVISION
+            Operacion(customButton20.Text);
+        }
+
+        private void customButton24_Click(object sender, EventArgs e)
+        {
+            //MULTIPLICACION
+            Operacion(customButton24.Text);
+        }
+
+        private void customButton21_Click(object sender, EventArgs e)
         {
             if (xRes == false)
             {
@@ -622,146 +914,11 @@ namespace WinFormsApp1
                     xRes = true;
                 }
             }
-
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void customButton1_Click(object sender, EventArgs e)
         {
-            //BOTON POTENCIA
-            Operacion(button11.Text);
-        }
-
-        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //BOTON SALIR
-            Application.Exit();
-        }
-
-        private void configuracionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form4 frmConfiguracion = new Form4();
-            frmConfiguracion.ShowDialog();
-        }
-
-        private void button23_Click(object sender, EventArgs e)
-        {
-            double valor = Convert.ToDouble(label2.Text);
-            double resulsqr = Math.Sqrt(valor);
-            label1.Text = "Raiz² de " + valor + " =";
-            label2.Text = Convert.ToString(resulsqr);
-            Operador = "";
-            xRes = true;
-        }
-
-        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-
-            int codigo = (int)e.KeyChar;
-
-            switch (codigo)
-            {
-                case 46:
-                    button19_Click(sender, e);
-                    break;
-
-                case 48:
-                    button3_Click(sender, e);
-                    break;
-
-                case 49:
-                    button1_Click(sender, e);
-                    break;
-
-                case 50:
-                    button2_Click(sender, e);
-                    break;
-
-                case 51:
-                    button6_Click(sender, e);
-                    break;
-
-                case 52:
-                    button7_Click(sender, e);
-                    break;
-
-                case 53:
-                    button5_Click(sender, e);
-                    break;
-
-                case 54:
-                    button4_Click(sender, e);
-                    break;
-
-                case 55:
-                    button9_Click(sender, e);
-                    break;
-
-                case 56:
-                    button8_Click(sender, e);
-                    break;
-
-                case 57:
-                    button10_Click(sender, e);
-                    break;
-
-                case 47:
-                    button16_Click(sender, e);
-                    break;
-
-                case 45:
-                    button15_Click(sender, e);
-                    break;
-
-                case 43:
-                    button14_Click(sender, e);
-                    break;
-
-                case 42:
-                    button17_Click(sender, e);
-                    break;
-
-                case 8:
-                    button12_Click(sender, e);
-                    break;
-
-                case 13:
-                    button18_Click(sender, e);
-                    break;
-
-            }
-        }
-
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
-        {
-
-
-
-        }
-
-        private void button9_KeyDown(object sender, KeyEventArgs e)
-        {
-
-        }
-
-        private void button9_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
-        private void button22_Click(object sender, EventArgs e)
-        {
-            double valor = Convert.ToDouble(label2.Text);
-            double resulsqr = Math.Cbrt(valor);
-            label1.Text = "Raiz³ de " + valor + " =";
-            label2.Text = Convert.ToString(resulsqr);
-            Operador = "";
-            xRes = true;
-        }
-
-        private void button27_Click(object sender, EventArgs e)
-        {
-
+            //BOTON SENO
             double numValor = Convert.ToDouble(label2.Text);
             double resSeno = 0;
 
@@ -770,12 +927,11 @@ namespace WinFormsApp1
             label2.Text = Convert.ToString(resSeno);
             Operador = "";
             xRes = true;
-
-
         }
 
-        private void button26_Click(object sender, EventArgs e)
+        private void customButton2_Click(object sender, EventArgs e)
         {
+            //BOTON COSENO
             double numValor = Convert.ToDouble(label2.Text);
             double resSeno = 0;
 
@@ -786,8 +942,9 @@ namespace WinFormsApp1
             xRes = true;
         }
 
-        private void button25_Click(object sender, EventArgs e)
+        private void customButton3_Click(object sender, EventArgs e)
         {
+            //BOTON TANGENTE
             double numValor = Convert.ToDouble(label2.Text);
             double resSeno = 0;
 
@@ -798,125 +955,32 @@ namespace WinFormsApp1
             xRes = true;
         }
 
-        private void Form1_Activated(object sender, EventArgs e)
+        private void customButton4_Click(object sender, EventArgs e)
         {
-            //ESTILO TEXTO DE LOS NUMEROS
-            estiloTexto = Settings.Default.TipoLetraTam;
-
-            // FONDO DE LA APP
-            int OpFondo = Settings.Default.OpcionFondo;
-            if (OpFondo == 1)
-            {
-                this.BackColor = Settings.Default.ColorFondoApp; //COLOR DE FONDO DE LA APP
-
-            }
-            else
-            {
-
-                if (File.Exists(Settings.Default.ImagenFondo))
-                {
-                    this.BackgroundImage = Image.FromFile(Settings.Default.ImagenFondo); // CARGA IMAGEN DE FONDO PARA LA APP
-                }
-                else
-                {
-                    //SI EL ARCHIVO DE IMAGEN NO EXISTE CARGA EL COLOR DE FONDO POR DEFECTO
-                    this.BackColor = Settings.Default.ColorFondoApp; //COLOR DE FONDO DE LA APP
-                }
-
-            }
-            /////////////////////////
-
-            //BOTONES DE FUNCIONES
-            System.Drawing.Color Cboton = Settings.Default.ColorBotonFunciones;
-            System.Drawing.Color CTboton = Settings.Default.ColorTextoBotonFun;
-
-            button11.BackColor = Cboton;
-            button12.BackColor = Cboton;
-            button13.BackColor = Cboton;
-            button23.BackColor = Cboton;
-            button14.BackColor = Cboton;
-            button15.BackColor = Cboton;
-            button16.BackColor = Cboton;
-            button17.BackColor = Cboton;
-            button18.BackColor = Cboton;
-
-            button11.ForeColor = CTboton;
-            button12.ForeColor = CTboton;
-            button13.ForeColor = CTboton;
-            button14.ForeColor = CTboton;
-            button15.ForeColor = CTboton;
-            button16.ForeColor = CTboton;
-            button17.ForeColor = CTboton;
-            button18.ForeColor = CTboton;
-            button23.ForeColor = CTboton;
-            ///////////////////////////////////
-            ///
-
-
-            //BOTONES NUMEROS
-            System.Drawing.Color CbotonN = Settings.Default.ColorBotonNumeros;
-            System.Drawing.Color CTbotonN = Settings.Default.ColorTextoBotonNum;
-
-            button1.BackColor = CbotonN;
-            button2.BackColor = CbotonN;
-            button3.BackColor = CbotonN;
-            button4.BackColor = CbotonN;
-            button5.BackColor = CbotonN;
-            button6.BackColor = CbotonN;
-            button7.BackColor = CbotonN;
-            button8.BackColor = CbotonN;
-            button9.BackColor = CbotonN;
-            button10.BackColor = CbotonN;
-            button19.BackColor = CbotonN;
-
-            button1.ForeColor = CTbotonN;
-            button2.ForeColor = CTbotonN;
-            button3.ForeColor = CTbotonN;
-            button4.ForeColor = CTbotonN;
-            button5.ForeColor = CTbotonN;
-            button6.ForeColor = CTbotonN;
-            button7.ForeColor = CTbotonN;
-            button8.ForeColor = CTbotonN;
-            button9.ForeColor = CTbotonN;
-            button10.ForeColor = CTbotonN;
-            button19.ForeColor = CTbotonN;
-
-            button1.Font = estiloTexto;
-            button2.Font = estiloTexto;
-            button3.Font = estiloTexto;
-            button4.Font = estiloTexto;
-            button5.Font = estiloTexto;
-            button6.Font = estiloTexto;
-            button7.Font = estiloTexto;
-            button8.Font = estiloTexto;
-            button9.Font = estiloTexto;
-            button10.Font = estiloTexto;
-            button19.Font = estiloTexto;
-
-            //////////////////////////////// 
-            ///
-
-            //BOTONES ESPECIALES
-            System.Drawing.Color CbotonE = Settings.Default.ColorBotonEspecial;
-            System.Drawing.Color CTbotonE = Settings.Default.ColorTextoBotonEsp;
-
-            button22.BackColor = CbotonE;
-            button25.BackColor = CbotonE;
-            button26.BackColor = CbotonE;
-            button27.BackColor = CbotonE;
-
-            button22.ForeColor = CTbotonE;
-            button25.ForeColor = CTbotonE;
-            button26.ForeColor = CTbotonE;
-            button27.ForeColor = CTbotonE;
-
-
+            //BOTON RAIZ CUBICA
+            double valor = Convert.ToDouble(label2.Text);
+            double resulsqr = Math.Cbrt(valor);
+            label1.Text = "Raiz³ de " + valor + " =";
+            label2.Text = Convert.ToString(resulsqr);
+            Operador = "";
+            xRes = true;
         }
 
-        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void customButton6_Click(object sender, EventArgs e)
         {
-            Form3 frmAcerca = new Form3();
-            frmAcerca.ShowDialog();
+            //RAIZ CUADRADA
+            double valor = Convert.ToDouble(label2.Text);
+            double resulsqr = Math.Sqrt(valor);
+            label1.Text = "Raiz² de " + valor + " =";
+            label2.Text = Convert.ToString(resulsqr);
+            Operador = "";
+            xRes = true;
+        }
+
+        private void customButton7_Click(object sender, EventArgs e)
+        {
+            //BOTON POTENCIA
+            Operacion(customButton7.Text);
         }
     }
 }

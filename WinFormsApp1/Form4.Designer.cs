@@ -52,8 +52,9 @@
             label5 = new Label();
             comboBox1 = new ComboBox();
             label6 = new Label();
-            button18 = new Button();
             groupBox3 = new GroupBox();
+            radioButton7 = new RadioButton();
+            radioButton6 = new RadioButton();
             openFileDialog1 = new OpenFileDialog();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -88,7 +89,7 @@
             groupBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox1.Location = new Point(25, 248);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(166, 67);
+            groupBox1.Size = new Size(152, 67);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "Tamaño Letra";
@@ -97,7 +98,7 @@
             // 
             radioButton3.AutoSize = true;
             radioButton3.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton3.Location = new Point(104, 14);
+            radioButton3.Location = new Point(89, 14);
             radioButton3.Name = "radioButton3";
             radioButton3.Size = new Size(61, 49);
             radioButton3.TabIndex = 2;
@@ -110,7 +111,7 @@
             // 
             radioButton2.AutoSize = true;
             radioButton2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton2.Location = new Point(58, 20);
+            radioButton2.Location = new Point(44, 20);
             radioButton2.Name = "radioButton2";
             radioButton2.Size = new Size(49, 36);
             radioButton2.TabIndex = 1;
@@ -123,7 +124,7 @@
             // 
             radioButton1.AutoSize = true;
             radioButton1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton1.Location = new Point(17, 24);
+            radioButton1.Location = new Point(6, 24);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(43, 29);
             radioButton1.TabIndex = 0;
@@ -178,6 +179,7 @@
             // radioButton5
             // 
             radioButton5.AutoSize = true;
+            radioButton5.Enabled = false;
             radioButton5.Location = new Point(17, 74);
             radioButton5.Name = "radioButton5";
             radioButton5.Size = new Size(149, 25);
@@ -302,28 +304,47 @@
             label6.TabIndex = 19;
             label6.Text = "Tipo de Letra";
             // 
-            // button18
-            // 
-            button18.BackColor = Color.RoyalBlue;
-            button18.FlatAppearance.BorderColor = Color.Silver;
-            button18.FlatStyle = FlatStyle.Flat;
-            button18.Font = new Font("Arial Black", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button18.ForeColor = Color.White;
-            button18.Location = new Point(9, 15);
-            button18.Name = "button18";
-            button18.Size = new Size(73, 63);
-            button18.TabIndex = 21;
-            button18.Text = "=";
-            button18.UseVisualStyleBackColor = false;
-            // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(button18);
-            groupBox3.Location = new Point(237, 244);
+            groupBox3.Controls.Add(radioButton7);
+            groupBox3.Controls.Add(radioButton6);
+            groupBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox3.Location = new Point(183, 248);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(92, 85);
+            groupBox3.Size = new Size(146, 67);
             groupBox3.TabIndex = 22;
             groupBox3.TabStop = false;
+            groupBox3.Text = "Forma Botones";
+            // 
+            // radioButton7
+            // 
+            radioButton7.Appearance = Appearance.Button;
+            radioButton7.FlatStyle = FlatStyle.System;
+            radioButton7.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            radioButton7.Location = new Point(77, 25);
+            radioButton7.Name = "radioButton7";
+            radioButton7.Size = new Size(49, 32);
+            radioButton7.TabIndex = 1;
+            radioButton7.TabStop = true;
+            radioButton7.Text = "C";
+            radioButton7.TextAlign = ContentAlignment.MiddleCenter;
+            radioButton7.UseVisualStyleBackColor = true;
+            radioButton7.CheckedChanged += radioButton7_CheckedChanged;
+            // 
+            // radioButton6
+            // 
+            radioButton6.Appearance = Appearance.Button;
+            radioButton6.FlatStyle = FlatStyle.System;
+            radioButton6.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            radioButton6.Location = new Point(17, 24);
+            radioButton6.Name = "radioButton6";
+            radioButton6.Size = new Size(49, 32);
+            radioButton6.TabIndex = 0;
+            radioButton6.TabStop = true;
+            radioButton6.Text = "R";
+            radioButton6.TextAlign = ContentAlignment.MiddleCenter;
+            radioButton6.UseVisualStyleBackColor = true;
+            radioButton6.CheckedChanged += radioButton6_CheckedChanged;
             // 
             // openFileDialog1
             // 
@@ -334,7 +355,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
-            ClientSize = new Size(352, 452);
+            ClientSize = new Size(347, 452);
             Controls.Add(groupBox3);
             Controls.Add(label6);
             Controls.Add(comboBox1);
@@ -392,8 +413,11 @@
         private Label label5;
         private ComboBox comboBox1;
         private Label label6;
-        private Button button18;
         private GroupBox groupBox3;
         private OpenFileDialog openFileDialog1;
+        private RadioButton radioButton6;
+        private CustomButton customButton1;
+        private Button button10;
+        private RadioButton radioButton7;
     }
 }

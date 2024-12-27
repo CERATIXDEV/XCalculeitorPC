@@ -142,5 +142,17 @@ namespace WinFormsApp1 {
                 this["OpcionFondo"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("30")]
+        public int borderRadio {
+            get {
+                return ((int)(this["borderRadio"]));
+            }
+            set {
+                this["borderRadio"] = value;
+            }
+        }
     }
 }

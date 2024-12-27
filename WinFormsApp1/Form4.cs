@@ -18,7 +18,7 @@ namespace WinFormsApp1
         System.Drawing.Color colorBotonNumeros;
         System.Drawing.Color colorBotonFunciones;
         System.Drawing.Color colorBotonEspecial;
-        string rutaImgaenFondo;
+        string rutaImgaenFondo = "";
         System.Drawing.Font tipoTextoTamaño;
         System.Drawing.Color colorTextoBotonNumeros;
         System.Drawing.Color colorTextoBotonFunciones;
@@ -26,6 +26,7 @@ namespace WinFormsApp1
         float tamLetra;
         string tipoLetra;
         int opcionFondo;
+        int BorderRadio;
 
         public Form4()
         {
@@ -40,7 +41,7 @@ namespace WinFormsApp1
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                rutaImgaenFondo= openFileDialog1.FileName;
+                rutaImgaenFondo = openFileDialog1.FileName;
             }
         }
 
@@ -79,13 +80,13 @@ namespace WinFormsApp1
         {
 
             colorFondoApp = Settings.Default.ColorFondoApp;
+            BorderRadio = Settings.Default.borderRadio;
 
-           
             colorBotonNumeros = Settings.Default.ColorBotonNumeros; ;
             colorBotonFunciones = Settings.Default.ColorBotonFunciones; ;
             colorBotonEspecial = Settings.Default.ColorBotonEspecial; ;
             rutaImgaenFondo = Settings.Default.ImagenFondo;
-            
+
             colorTextoBotonNumeros = Settings.Default.ColorTextoBotonNum; ;
             colorTextoBotonFunciones = Settings.Default.ColorTextoBotonFun; ;
             colorTextoBotonEspeciales = Settings.Default.ColorTextoBotonEsp; ;
@@ -130,7 +131,7 @@ namespace WinFormsApp1
             opcionFondo = Settings.Default.OpcionFondo;
             if (opcionFondo == 1)
             {
-                radioButton4 .Checked = true;   
+                radioButton4.Checked = true;
                 button4.Enabled = false;
             }
             else
@@ -139,6 +140,16 @@ namespace WinFormsApp1
                 button5.Enabled = false;
             }
             //////////////////////////////////////
+
+
+            if (BorderRadio == 30)
+            {
+                radioButton6.Checked = true;
+            }
+            else
+            {
+                radioButton7.Checked = true;
+            }
 
 
         }
@@ -178,16 +189,17 @@ namespace WinFormsApp1
 
             Settings.Default["ColorBotonEspecial"] = colorBotonEspecial;
             Settings.Default["ColorTextoBotonEsp"] = colorTextoBotonEspeciales;
+            Settings.Default["ImagenFondo"] = rutaImgaenFondo;
 
             Settings.Default["OpcionFondo"] = opcionFondo;
 
-
+            Settings.Default["borderRadio"] = BorderRadio;
 
             Settings.Default.Save();
 
             //MessageBox.Show("Opciones Guardadas Satisfactoriamente","CONFIGURACION",MessageBoxButtons.OK,MessageBoxIcon.Information );
             this.Close();
-        
+
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -250,6 +262,22 @@ namespace WinFormsApp1
             {
                 button8.BackColor = colorDialog1.Color;
                 colorTextoBotonEspeciales = colorDialog1.Color;
+            }
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton6.Checked)
+            {
+                BorderRadio = 30;
+            }
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton7.Checked) 
+            {
+                BorderRadio = 0;
             }
         }
     }
